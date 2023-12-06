@@ -1,5 +1,5 @@
 <h1 align="center" style="border-bottom: none">
-    <a href="https://linuxpolska.com/pl/" target="_blank"><img alt="Longhorn" width="300px" src="https://github.com/linuxpolska/ezd-rp/blob/release/1.0.0/docs/LinuxPolska-icon.png""></a>
+    <a href="https://linuxpolska.com/pl/" target="_blank"><img alt="Longhorn" width="200px" src="https://github.com/linuxpolska/ezd-rp/blob/release/1.0.0/docs/LinuxPolska-icon.png""></a>
 </h1>
 
 
@@ -45,9 +45,9 @@ The X.Y.P versioning scheme roughly corresponds to the following rules (with exc
 - **Patch Version**: represents a patch to a given release line of a chart within a minor version. Make backward compatible bug fixes
 
 ## Releases
-| Release   | Current Version | First Stable Version | Status         | Release Notes                                        | Active Maintenance |
-|-----------|-----------------|----------------------|----------------|----------------------------------------------------------------|-------------------------------------------------------------| -------------|
-| **1.0.0***  | 1.0.0           | 1.0.0                | Stable         | [🔗](https://github.com/linuxpolska/ezd-rp/releases/tag/1.0.0) | ✅
+| Release   | Current Version | First Stable Version | Status         | Release Notes                                                  | Active Maintenance |
+|-----------|-----------------|----------------------|----------------|----------------------------------------------------------------| -------------------|
+| **1.0.0***| 1.0.0           | 1.0.0                | Stable         | [🔗] (https://github.com/linuxpolska/ezd-rp/releases/tag/1.0.0)| ✅                 |
 
 ## Contact
 
