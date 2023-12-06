@@ -38,9 +38,9 @@ The X.Y.P versioning scheme roughly corresponds to the following rules (with exc
 - **Patch Version**: represents a patch to a given release line of a chart within a minor version. Make backward compatible bug fixes
 
 ## Releases
-| Release   | Current Version | First Stable Version | Status         | Release Note (Changelog)                                       | Notes                                            | Active Maintenance |
+| Release   | Current Version | First Stable Version | Status         | Release Note (Changelog)                                       | Active                                            | Active Maintenance |
 |-----------|-----------------|----------------------|----------------|----------------------------------------------------------------|-------------------------------------------------------------| -------------|
-| **1.0.0***  | 1.0.0           | 1.0.0                | Stable         | [🔗](https://github.com/linuxpolska/ezd-rp/docs/releases/v1.0.0) | [🔗](https://github.com/linuxpolska/ezd-rp/docs/1.0.0/important-notes) | 
+| **1.0.0***  | 1.0.0           | 1.0.0                | Stable         | [🔗](https://github.com/linuxpolska/ezd-rp/releases/tag/1.0.0) |  ✅ | 
 
 ## Contact
 
