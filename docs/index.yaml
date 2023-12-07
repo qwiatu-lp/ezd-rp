@@ -7,14 +7,14 @@ entries:
       catalog.cattle.io/release-name: ezd-backend
     apiVersion: v2
     appVersion: 1.15.70
-    created: "2023-09-11T10:22:57.123164539+02:00"
+    created: "2023-12-07T09:54:19.963150181+01:00"
     dependencies:
     - condition: global.mongodb.deploy
       name: mongodb
       repository: file://./charts/mongodb
       version: 10.23.13
     description: Services necessary to run EZD RP app
-    digest: 6ddb8409fea90bed0fa58822491f2694dec9750f953448916cf3bf4bf597f98a
+    digest: d179f6f6f3880d9c32eef5931152418b272b65cfe121cc0a43294413e9a480ca
     home: https://linuxpolska.com
     icon: https://linuxpolska.com/logo/LinuxPolska-icon.png
     keywords:
@@ -28,8 +28,8 @@ entries:
     - https://github.com/linuxpolska/ezd-rp.git
     type: application
     urls:
-    - ezd-backend/ezd-backend-100.0.1.tgz
-    version: 100.0.1
+    - ezd-backend/ezd-backend-1.0.0.tgz
+    version: 1.0.0
   ezd-crd:
   - annotations:
       catalog.cattle.io/display-name: CRDs for LP Backend
@@ -38,7 +38,7 @@ entries:
       catalog.cattle.io/release-name: ezd-crd
     apiVersion: v2
     appVersion: 1.15.70
-    created: "2023-09-11T10:22:57.132756977+02:00"
+    created: "2023-12-07T09:54:19.971365995+01:00"
     dependencies:
     - condition: global.rabbitmq.deploy
       name: rabbitmq-operator
@@ -53,7 +53,7 @@ entries:
       repository: file://./charts/redis-operator
       version: 0.15.3
     description: Set of operators and CRDs for LP Backend
-    digest: f10e3ccdc3030a12f455ed423b7e198beb236e2da6a23f36e71956683244fc95
+    digest: 3cf1a3f5f9cc6ea50385c9410fd6f9fde69f4f6efc7e21a279697fc8407a55be
     home: https://linuxpolska.com
     icon: https://linuxpolska.com/logo/LinuxPolska-icon.png
     keywords:
@@ -71,6 +71,6 @@ entries:
     - https://github.com/linuxpolska/ezd-rp.git
     type: application
     urls:
-    - ezd-crd/ezd-crd-100.0.1.tgz
-    version: 100.0.1
-generated: "2023-09-11T10:22:57.117740165+02:00"
+    - ezd-crd/ezd-crd-1.0.0.tgz
+    version: 1.0.0
+generated: "2023-12-07T09:54:19.958774437+01:00"

@@ -2,7 +2,7 @@ apiVersion: v2
 
 name: ezd-crd
 
-version: 100.0.1
+version: 1.0.0
 
 kubeVersion:  '>=1.19.0-0'
 
