@@ -7,7 +7,7 @@
 
 ```bash
 
-export K8S_NAMESPACE=ezd-rp  #desired namespace where ezd-rp will be install
+export K8S_NAMESPACE=ezd-rp  #desired namespace where ezd-rp will be installed
 export K8S_SC=   #set environmental variable for storage class - to get available run: "kubectl get storageclass"
 
 export POSTGRES_HOST=lp-backend-postgresql-rw
@@ -153,7 +153,7 @@ kubectl -n ${K8S_NAMESPACE} create secret tls ezdrp-cert --cert=certs/domain.cer
 
 ```bash
 helm upgrade --install ezd-frontend -n ${K8S_NAMESPACE} -f /tmp/ezdrp-app.values nask-ezd/nask-ezdrp-ha
-#Please remember that version 1.17.11 and above some of pvc requires "ReadWriteMany" acccess whcih will not work with storage class vsphere-csi-rwo
+#Please remember that version 1.17.11 and above some of pvc requires "ReadWriteMany" acccess whcih will not work with storage class vsphere-csi-rwoi, please add --version to pick different than latest.
 ```
 
 4. Set up password for ezd-fronted application (GUI)
