@@ -47,7 +47,7 @@ The X.Y.P versioning scheme roughly corresponds to the following rules (with exc
 ## Releases
 | Release   | Chart Version   | First Stable Version | Status         | Release Notes                                                  |  Tested with NASK Ezdrp application     | Active Maintenance |
 |-----------|-----------------|----------------------|----------------|----------------------------------------------------------------|-----------------------------------------|-------------------|
-| **1.0.0***| 1.0.0           | 1.0.0                | Stable         | [🔗] (https://github.com/linuxpolska/ezd-rp/releases/tag/1.0.0)| Chart up to 1.16.15 Application ver:1.2023-16 |        ✅         |
+| **1.0.0***| 1.0.0           | 1.0.0                | Stable         | [🔗] (https://github.com/linuxpolska/ezd-rp/releases/tag/1.0.0)| Chart up to 1.16.15 and Application version up to 1.2023-16 |        ✅         |
 
 ## Contact
 
