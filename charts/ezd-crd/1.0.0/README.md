@@ -2,7 +2,7 @@
 # CRDs for EZD backend Helm Chart
 
 Helm chart necessary for installtion of EZD backend chart.
-For more detailed information for EZD-CRD chart please check [Readme](https://github.com/linuxpolska/ezd-rp/README.md)
+For more detailed information for EZD-CRD chart please check [README](https://github.com/linuxpolska/ezd-rp/README.md)
 
 ## TL;DR
 
@@ -38,7 +38,7 @@ To install the chart with the release name `my-release`:
 helm upgrade --install --create-namespace ezd-crd -n default lp-ezd/ezd-crd
 ```
 
-The command deploys operators on the Kubernetes cluster in the default configuration. For more detailed information regarding parameters please check our [Readme](https://github.com/linuxpolska/ezd-rp/README.md).
+The command deploys operators on the Kubernetes cluster in the default configuration. For more detailed information regarding parameters please check our [README](https://github.com/linuxpolska/ezd-rp/README.md).
 
 > **Tip**: List all releases using `helm list`
 
@@ -62,19 +62,19 @@ kubectl get crd -o name | grep -E "(postgresql.cnpg.io|rabbitmqclusters.rabbitmq
 
 > **Note**: Deleting the CRDs will delete all data as well. Please be cautious before doing it.
 
-For more detailed information regarding installation of ezd-crd please refer to [quickstart](https://github.com/linuxpolska/ezd-rp/QUICKSTART.md)
+For more detailed information regarding installation of ezd-crd please refer to [QUICKSTART](https://github.com/linuxpolska/ezd-rp/QUICKSTART.md)
 
 ## Compability with NASK ezdrp version
 
-Chart was tested with application versions up to 1.2023-16
+Chart ezd-crd was tested with chart version up to 1.16.15(application version up to 1.2023-16).
 
 ## Configuration and parameters
 
 See [Customizing the Chart Before Installing](https://helm.sh/docs/intro/using_helm/#customizing-the-chart-before-installing). To see all configurable options with detailed comments:
 
 ```console
-git clone https://github.com/linuxpolska/ezd-rp.git
-helm show values ezd-rp/charts/ezd-crd/1.0.0
+helm search repo lp-ezd
+helm show values lp-ezd/ezd-crd
 ```
 
 ## Components version

@@ -2,7 +2,7 @@
 # LP backend for EZD RP 
 
 Services necessary to run EZD RP application provided by NASK. 
-For more detailed information for EZD-BACKEND chart please check [Readme](https://github.com/linuxpolska/ezd-rp/README.md)
+For more detailed information for EZD-BACKEND chart please check [README](https://github.com/linuxpolska/ezd-rp/README.md)
 
 ## TL;DR
 
@@ -38,7 +38,7 @@ To install the chart with the release name `my-release`:
 helm upgrade --install --create-namespace ezd-backend -n ezd-rp le-ezd/ezd-backend
 ```
 
-The command deploys postgresql, rabbitmq, redis on the Kubernetes cluster in the default configuration. For more detailed information regarding parameters please check our [Readme](https://github.com/linuxpolska/ezd-rp/README.md).
+The command deploys postgresql, rabbitmq, redis on the Kubernetes cluster in the default configuration. For more detailed information regarding parameters please check our [README](https://github.com/linuxpolska/ezd-rp/README.md).
 
 > **Tip**: List all releases using `helm list`
 
@@ -54,19 +54,19 @@ helm -n default uninstall ezd-backed
 
 > **Note**: Remove helm chart before remove CRDs for LP Backend.
 
-For more detailed information regarding installation of ezd-backend please refer to [quickstart](https://github.com/linuxpolska/ezd-rp/QUICKSTART.md)
+For more detailed information regarding installation of ezd-backend please refer to [QUICKSTART](https://github.com/linuxpolska/ezd-rp/QUICKSTART.md)
 
 ## Compability with NASK ezdrp version
 
-Chart was tested with application versions up to 1.2023-16
+Chart ezd-crd was tested with chart version up to 1.16.15(application version up to 1.2023-16).
 
 ## Configuration and parameters
 
 See [Customizing the Chart Before Installing](https://helm.sh/docs/intro/using_helm/#customizing-the-chart-before-installing). To see all configurable options with detailed comments:
 
 ```console
-git clone https://github.com/linuxpolska/ezd-rp.git
-helm show values ezd-rp/charts/ezd-backend/1.0.0
+helm search repo lp-ezd
+helm show values lp-ezd/ezd-backend
 ```
 
 ## Components version

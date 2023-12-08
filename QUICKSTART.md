@@ -153,8 +153,8 @@ kubectl -n ${K8S_NAMESPACE} create secret tls ezdrp-cert --cert=certs/domain.cer
 3. Install frontend
 
 ```bash
-helm upgrade --install ezd-frontend -n ${K8S_NAMESPACE} -f /tmp/ezdrp-app.values nask-ezd/nask-ezdrp-ha
-#Please remember that version 1.17.11 and above some of pvc requires "ReadWriteMany" acccess whcih will not work with storage class vsphere-csi-rwoi, please add --version to pick different than latest.
+helm upgrade --install ezd-frontend -n ${K8S_NAMESPACE} -f /tmp/ezdrp-app.values nask-ezd/nask-ezdrp-ha --version 1.16.15
+#Please remember that version 1.17.11 and above some of pvc requires "ReadWriteMany" acccess whcih will not work with storage class vsphere-csi-rwo, please add --version <ver> to pick different than latest.
 ```
 
 4. Set up password for ezd-fronted application (GUI)
