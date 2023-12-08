@@ -6,7 +6,8 @@ Services necessary to run EZD RP app
 ## TL;DR
 
 ```console
-helm upgrade --install --create-namespace ezd-backend -n ezdrp linuxpolska/ezd-backend
+helm repo add lp-ezd https://linuxpolska.github.io/ezd-rp
+helm upgrade --install --create-namespace ezd-backend -n ezd-rp lp-ezd/ezd-backend
 ```
 
 ## Introduction
