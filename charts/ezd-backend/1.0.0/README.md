@@ -27,10 +27,10 @@ Linux Polska charts can be served by [Rancher Apps & Marketplace](https://ranche
 To install the chart with the release name `my-release`:
 
 ```console
-helm repo add linuxpolska  https://qwiatu-linuxpolska.github.io/ezd/
+helm repo add lp-ezd https://github.com/linuxpolska/ezd-rp
 helm repo update 
 
-helm upgrade --install --create-namespace ezd-backend -n ezdrp linuxpolska/ezd-backend
+helm upgrade --install --create-namespace ezd-backend -n ezd-rp le-ezd/ezd-backend
 ```
 
 The command deploys postgresql, rabbitmq, redis on the Kubernetes cluster in the default configuration. The [Parameters](#parameters) section lists the parameters that can be configured during installation.
