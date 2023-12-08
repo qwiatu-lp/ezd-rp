@@ -39,7 +39,7 @@ To install the chart with the release name `my-release`:
 helm upgrade --install --create-namespace ezd-backend -n ezd-rp le-ezd/ezd-backend
 ```
 
-The command deploys postgresql, rabbitmq, redis on the Kubernetes cluster in the default configuration. The [Parameters](#parameters) section lists the parameters that can be configured during installation.
+The command deploys postgresql, rabbitmq, redis on the Kubernetes cluster in the default configuration. For more detailed information regarding parameters please check our [Readme](https://github.com/linuxpolska/ezd-rp/README.md).
 
 > **Tip**: List all releases using `helm list`
 

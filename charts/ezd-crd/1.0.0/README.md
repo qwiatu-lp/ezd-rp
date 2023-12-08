@@ -40,7 +40,7 @@ To install the chart with the release name `my-release`:
 helm upgrade --install --create-namespace ezd-crd -n default lp-ezd/ezd-crd
 ```
 
-The command deploys operators on the Kubernetes cluster in the default configuration. The [Parameters](#parameters) section lists the parameters that can be configured during installation.
+The command deploys operators on the Kubernetes cluster in the default configuration. For more detailed information regarding parameters please check our [Readme](https://github.com/linuxpolska/ezd-rp/README.md).
 
 > **Tip**: List all releases using `helm list`
 
@@ -73,5 +73,5 @@ Chart was tested with application versions up to 1.2023-16
 ## Components version
 - redis_operator: v0.15.0
 - cluster_operator: 2.2.0
-- cloudnative-pg 1.19.1
+- cloudnative-pg: 1.19.1
 
