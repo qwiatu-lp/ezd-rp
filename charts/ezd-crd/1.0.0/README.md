@@ -31,7 +31,7 @@ Add repository necessary for installation:
 
 ```console
 helm repo add lp-ezd https://linuxpolska.github.io/ezd-rp
-helm repoupdate
+helm repo update
 ```
 
 To install the chart with the release name `my-release`:
