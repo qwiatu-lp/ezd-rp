@@ -1,7 +1,7 @@
 <!--- app-name: ezd-backend -->
 # LP backend for EZD RP 
 
-Services necessary to run EZD RP app 
+Services necessary to run EZD RP application provided by NASK. 
 
 ## TL;DR
 
@@ -16,6 +16,7 @@ This chart bootstraps a set of operatos and CRDs on a [Kubernetes](https://kuber
 
 Linux Polska charts can be served by [Rancher Apps & Marketplace](https://ranchermanager.docs.rancher.com/pages-for-subheaders/helm-charts-in-rancher) for deployment and management of Helm Charts in clusters.
 
+For more detailed information for EZD-BACKEND chart please check [Readme](https://github.com/linuxpolska/ezd-rp/README.md)
 
 ## Prerequisites
 
@@ -50,15 +51,18 @@ To uninstall/delete the `ezd-backend` deployment:
 helm -n default uninstall ezd-backed
 ```
 
-
 > **Note**: Deleting the helm chart will delete all data as well. Please be cautious before doing it.
 
 > **Note**: Remove helm chart before remove CRDs for LP Backend.
 
-## Compability with NASK version
+For more detailed information regardin installation ezd-backend please refer to [quickstart](https://github.com/linuxpolska/ezd-rp/QUICKSTART.md)
 
-Chart was tested with application version up to 1.2023-16
+## Compability with NASK ezdrp version
 
-## Parameters
+Chart was tested with application versions up to 1.2023-16
 
-### Global parameters
+## Components version
+- mongodb: 4.4.8
+- redis: v7.0.5
+- rabbitmq: 3.11.10-management
+- postgresql: 15.3 
