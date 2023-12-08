@@ -41,7 +41,7 @@ The command deploys operators on the Kubernetes cluster in the default configura
 To uninstall/delete the `my-release` deployment:
 
 ```console
-helm delete my-release
+helm uninstall ezd-crd
 ```
 
 The command removes all the Kubernetes components but no CRDs
