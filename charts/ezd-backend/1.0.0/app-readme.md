@@ -3,7 +3,7 @@
 
 This chart is based off of the some upstream charts postgresql, rabbitmq, redis. The chart deploys set of operators and CRDs, which necessary to configure postgresql, rabbitmq, redis.
 
-For more information on how to use the feature, refer to our [docs](https://qwiatu-linuxpolska.github.io/ezd/).
+For more information on how to use the feature, refer to our [docs](https://github.com/linuxpolska/ezd-rp).
 
 
 ## Prerequisites
