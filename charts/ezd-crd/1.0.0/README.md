@@ -7,7 +7,8 @@ Helm chart necessary to install EZD backend chart
 ## TL;DR
 
 ```console
-helm install my-release oci://registry-1.docker.io/l
+helm repo add lp-ezd https://linuxpolska.github.io/ezd-rp
+helm upgrade --install --create-namespace ezd-crd -n default lp-ezd/ezd-crd
 ```
 
 ## Introduction
