@@ -2,6 +2,7 @@
 # CRDs for EZD backend Helm Chart
 
 Helm chart necessary for installtion of EZD backend chart.
+For more detailed information for EZD-CRD chart please check [Readme](https://github.com/linuxpolska/ezd-rp/README.md)
 
 ## TL;DR
 
@@ -15,9 +16,6 @@ helm upgrade --install --create-namespace ezd-crd -n default lp-ezd/ezd-crd
 This chart bootstraps a set of operatos and CRDs on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
 
 Linux Polska charts can be served by [Rancher Apps & Marketplace](https://ranchermanager.docs.rancher.com/pages-for-subheaders/helm-charts-in-rancher) for deployment and management of Helm Charts in clusters.
-
-
-For more detailed information for EZD-CRD chart please check [Readme](https://github.com/linuxpolska/ezd-rp/README.md)
 
 ## Prerequisites
 
@@ -64,7 +62,7 @@ kubectl get crd -o name | grep -E "(postgresql.cnpg.io|rabbitmqclusters.rabbitmq
 
 > **Note**: Deleting the CRDs will delete all data as well. Please be cautious before doing it.
 
-For more detailed information regardin installation ezd-backend please refer to [quickstart](https://github.com/linuxpolska/ezd-rp/QUICKSTART.md)
+For more detailed information regarding installation of ezd-crd please refer to [quickstart](https://github.com/linuxpolska/ezd-rp/QUICKSTART.md)
 
 ## Compability with NASK ezdrp version
 

@@ -2,6 +2,7 @@
 # LP backend for EZD RP 
 
 Services necessary to run EZD RP application provided by NASK. 
+For more detailed information for EZD-BACKEND chart please check [Readme](https://github.com/linuxpolska/ezd-rp/README.md)
 
 ## TL;DR
 
@@ -15,8 +16,6 @@ helm upgrade --install --create-namespace ezd-backend -n ezd-rp lp-ezd/ezd-backe
 This chart bootstraps a set of operatos and CRDs on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
 
 Linux Polska charts can be served by [Rancher Apps & Marketplace](https://ranchermanager.docs.rancher.com/pages-for-subheaders/helm-charts-in-rancher) for deployment and management of Helm Charts in clusters.
-
-For more detailed information for EZD-BACKEND chart please check [Readme](https://github.com/linuxpolska/ezd-rp/README.md)
 
 ## Prerequisites
 
@@ -55,7 +54,7 @@ helm -n default uninstall ezd-backed
 
 > **Note**: Remove helm chart before remove CRDs for LP Backend.
 
-For more detailed information regardin installation ezd-backend please refer to [quickstart](https://github.com/linuxpolska/ezd-rp/QUICKSTART.md)
+For more detailed information regarding installation of ezd-backend please refer to [quickstart](https://github.com/linuxpolska/ezd-rp/QUICKSTART.md)
 
 ## Compability with NASK ezdrp version
 
