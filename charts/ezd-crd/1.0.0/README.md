@@ -68,6 +68,15 @@ For more detailed information regarding installation of ezd-crd please refer to 
 
 Chart was tested with application versions up to 1.2023-16
 
+## Configuration and parameters
+
+See [Customizing the Chart Before Installing](https://helm.sh/docs/intro/using_helm/#customizing-the-chart-before-installing). To see all configurable options with detailed comments:
+
+```console
+git clone https://github.com/linuxpolska/ezd-rp.git
+helm show values ezd-rp/charts/ezd-crd/1.0.0
+```
+
 ## Components version
 - redis_operator: v0.15.0
 - cluster_operator: 2.2.0

@@ -60,6 +60,15 @@ For more detailed information regarding installation of ezd-backend please refer
 
 Chart was tested with application versions up to 1.2023-16
 
+## Configuration and parameters
+
+See [Customizing the Chart Before Installing](https://helm.sh/docs/intro/using_helm/#customizing-the-chart-before-installing). To see all configurable options with detailed comments:
+
+```console
+git clone https://github.com/linuxpolska/ezd-rp.git
+helm show values ezd-rp/charts/ezd-backend/1.0.0
+```
+
 ## Components version
 - mongodb: 4.4.8
 - redis: v7.0.5

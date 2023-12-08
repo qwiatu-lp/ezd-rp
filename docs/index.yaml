@@ -7,14 +7,14 @@ entries:
       catalog.cattle.io/release-name: ezd-backend
     apiVersion: v2
     appVersion: 1.2023-16
-    created: "2023-12-08T12:05:24.894767525+01:00"
+    created: "2023-12-08T13:07:53.9361954+01:00"
     dependencies:
     - condition: global.mongodb.deploy
       name: mongodb
       repository: file://./charts/mongodb
       version: 10.23.13
     description: Services necessary to run EZD RP app
-    digest: 966f9fe22429e13288f562cb98bdc6c9c7574b99c89a8349a801b4a191394a66
+    digest: 70324dae4cc465579c92dc368636fafc10519b1bee99e7c2fa9aa8baeeafb7f5
     home: https://linuxpolska.com
     icon: https://linuxpolska.com/logo/LinuxPolska-icon.png
     keywords:
@@ -38,7 +38,7 @@ entries:
       catalog.cattle.io/release-name: ezd-crd
     apiVersion: v2
     appVersion: 1.2023-16
-    created: "2023-12-08T12:05:24.901160375+01:00"
+    created: "2023-12-08T13:07:53.94262245+01:00"
     dependencies:
     - condition: global.rabbitmq.deploy
       name: rabbitmq-operator
@@ -53,7 +53,7 @@ entries:
       repository: file://./charts/redis-operator
       version: 0.15.3
     description: Set of operators and CRDs for LP Backend
-    digest: 1b42b5e2d3ac6822ece633075ff26af792abd88f88b6bd2edabc9784673d0306
+    digest: 9027e260d49f9c7824d31c2a694bcbc8530dc742a2083b7da2dddc1e3aa4c398
     home: https://linuxpolska.com
     icon: https://linuxpolska.com/logo/LinuxPolska-icon.png
     keywords:
@@ -73,4 +73,4 @@ entries:
     urls:
     - ezd-crd/ezd-crd-1.0.0.tgz
     version: 1.0.0
-generated: "2023-12-08T12:05:24.890584123+01:00"
+generated: "2023-12-08T13:07:53.932237258+01:00"
