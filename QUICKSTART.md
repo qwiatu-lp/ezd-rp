@@ -35,7 +35,8 @@ kubectl config set-context --current --namespace ${K8S_NAMESPACE}
 4. Add repositories necessary for installation
 
 ```bash 
-helm repo add lp-ezd https://github.com/linuxpolska/ezd-rp
+helm repo add lp-ezd https://linuxpolska.github.io/ezd-rp
+
 helm repo add nask-ezd https://hub.eadministracja.nask.pl/chartrepo/ezdrp 
 
 helm repo update
