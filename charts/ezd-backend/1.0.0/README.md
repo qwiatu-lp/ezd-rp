@@ -25,12 +25,16 @@ Linux Polska charts can be served by [Rancher Apps & Marketplace](https://ranche
 
 ## Installing the Chart
 
-To install the chart with the release name `my-release`:
+Add repository necessary for installation:
 
 ```console
 helm repo add lp-ezd https://github.com/linuxpolska/ezd-rp
-helm repo update 
+helm repo update
+```
 
+To install the chart with the release name `my-release`:
+
+```console
 helm upgrade --install --create-namespace ezd-backend -n ezd-rp le-ezd/ezd-backend
 ```
 
@@ -51,7 +55,10 @@ helm -n default uninstall ezd-backed
 
 > **Note**: Remove helm chart before remove CRDs for LP Backend.
 
+## Compability with NASK version
+
+Chart was tested with application version up to 1.2023-16
+
 ## Parameters
 
 ### Global parameters
-

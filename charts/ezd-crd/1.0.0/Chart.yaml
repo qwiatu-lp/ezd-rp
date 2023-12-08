@@ -24,7 +24,7 @@ sources:
 
 dependencies:
 - name: rabbitmq-operator
-  version: 100.0.1
+  version: 1.0.0
   condition: global.rabbitmq.deploy
   repository: file://./charts/rabbitmq-operator
   

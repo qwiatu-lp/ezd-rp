@@ -26,6 +26,13 @@ Linux Polska charts can be served by [Rancher Apps & Marketplace](https://ranche
 
 ## Installing the Chart
 
+Add repository necessary for installation:
+
+```console
+helm repo add lp-ezd https://linuxpolska.github.io/ezd-rp
+helm repoupdate
+```
+
 To install the chart with the release name `my-release`:
 
 ```console
@@ -55,6 +62,10 @@ kubectl get crd -o name | grep -E "(postgresql.cnpg.io|rabbitmqclusters.rabbitmq
 ```
 
 > **Note**: Deleting the CRDs will delete all data as well. Please be cautious before doing it.
+
+## Compability with NASK version
+
+Chart was tested with application version up to 1.2023-16
 
 ## Parameters
 
