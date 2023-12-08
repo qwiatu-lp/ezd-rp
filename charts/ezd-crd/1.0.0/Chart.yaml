@@ -44,7 +44,7 @@ maintainers:
 
 icon: https://linuxpolska.com/logo/LinuxPolska-icon.png
 
-appVersion: "1.15.70"
+appVersion: "1.2023-16"
 
 annotations:
   catalog.cattle.io/display-name: CRDs for LP Backend
