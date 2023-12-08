@@ -29,7 +29,7 @@ Linux Polska charts can be served by [Rancher Apps & Marketplace](https://ranche
 To install the chart with the release name `my-release`:
 
 ```console
-helm install my-release oci://registry-1.docker.io/
+helm upgrade --install --create-namespace ezd-crd -n default lp-ezd/ezd-crd
 ```
 
 The command deploys operators on the Kubernetes cluster in the default configuration. The [Parameters](#parameters) section lists the parameters that can be configured during installation.
