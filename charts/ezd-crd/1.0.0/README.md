@@ -66,7 +66,7 @@ For more detailed information regarding installation of ezd-crd please refer to 
 
 ## Compability with NASK ezdrp version
 
-Chart ezd-crd was tested with chart version up to 1.16.15(application version up to 1.2023-16).
+Chart ezd-crd was tested with chart version up to 1.16.15 (application version up to 1.2023-16).
 
 ## Configuration and parameters
 
