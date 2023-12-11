@@ -3,7 +3,7 @@
 **Version 1.0.0 released!**
 
 
-This is initial and first stable version of EZDR RP application developed by NASK is allowing to install it on Kubernetes using Helm.
+This is initial and first stable version of LP-EZD package developed by Linux Polska which is allowing to install application developed by NASK on Kubernetes using Helm.
 
 ## Components version:
 1. Backend-CRD
@@ -20,7 +20,7 @@ This is initial and first stable version of EZDR RP application developed by NAS
 
 > **Please ensure your Kubernetes cluster is at least v1.19 and helm 3.2.0+ before installing edzrp linuxpolska solution.**
 
-Follow the installation instructions follow [quickstart](https://github.com/linuxpolska/ezd-rp/blob/release/1.0.0/QUICKSTART.md)
+For the installation instructions follow [quickstart](https://github.com/linuxpolska/ezd-rp/blob/release/1.0.0/QUICKSTART.md)
 
 
 ## Upgrade
