@@ -113,14 +113,14 @@ VolumeFailedDelete 	PersistentVolume pvc-620a6692-378c-42e8-a8e3-7d4eb4198d62
 Persistentvolume pvc-620a6692-378c-42e8-a8e3-7d4eb4198d62 is still attached to node ezd-w3
 	Wed, Nov 15 2023  10:09:28 am
 ```
+Solution to this issues is to install ezd-crd. Then this will allow you to remove frontend.
 
-
-## Issue during installation for the nevest chart from nask.
+## Issue during installation for the newest chart from nask.
 
 	ProvisioningFailed 	PersistentVolumeClaim filerepo-api-storage
 Failed to provision volume with StorageClass "vsphere-csi-rwo": rpc error: code = Unavailable desc = error reading from server: EOF 
 
 The reaseon for that is:
-- one of the pvc needs to use ReadWriteManu. Which means it will not work on StorageClass "vsphere-csi-rwo".
+- one of the pvc needs to use ReadWriteMany. Which means it will not work on StorageClass "vsphere-csi-rwo".
 
 Solution: use different storage class. 
