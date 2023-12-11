@@ -22,7 +22,7 @@ export MONGO_PASSWD=$(openssl rand -hex 10)  # random it by default or set own p
 export REDIS_PASSWD=$(openssl rand -hex 10)  # random it by default or set own password
 ```
 
-2. Create namespace and set to context to created namespace
+2. Create namespace and set context to created namespace
 
 ```bash
 kubectl create ns ${K8S_NAMESPACE}
