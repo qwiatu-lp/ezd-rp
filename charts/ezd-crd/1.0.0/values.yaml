@@ -23,6 +23,7 @@ global:
 rabbitmq-operator:
   image:
     repository: quay.io/linuxpolska/ezd-crd_cluster-operator
+    tag: 2.2.0
     pullPolicy: Always
   imagePullSecrets:
   - name: credentials-registry-operator
@@ -40,7 +41,8 @@ rabbitmq-operator:
 cloudnative-pg:
   image:
     repository: quay.io/linuxpolska/ezd-crd_cloudnative-pg
-  pullPolicy: Always
+    tag: 1.19.1
+    pullPolicy: Always
   imagePullSecrets:
   - name: credentials-registry-operator
   resources: {}
@@ -50,9 +52,10 @@ cloudnative-pg:
   fullnameOverride: "postgresql"
 
 redis-operator:
-  redisOperator:
-    imageName: quay.io/linuxpolska/ezd-crd_redis-operator
-    imagePullPolicy: Always
+  image:
+    repository: quay.io/linuxpolska/ezd-crd_redis-operator
+    tag: v0.15.0
+    pullPolicy: Always
   serviceAccountName: "redis-operator"
   resources:
     limits:
