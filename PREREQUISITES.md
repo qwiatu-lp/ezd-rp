@@ -26,4 +26,10 @@ Useful Helm Client Commands:
 # Install PV Provisioner
 You must install solution which support RWX and RWO PVCs
 
-The quickest way to setup CSI is go to [CSI page](https://kubernetes-csi.github.io/docs/drivers.html) 
+The quickest way to setup CSI is go to [CSI page](https://kubernetes-csi.github.io/docs/drivers.html)
+
+## REQUIREMENTS
+
+- Kubernetes 1.19+
+- Helm 3.2.0+
+- PV provisioner support in the underlying infrastructure 
