@@ -7,7 +7,36 @@ entries:
       catalog.cattle.io/release-name: ezd-backend
     apiVersion: v2
     appVersion: 1.2023-16
-    created: "2024-01-07T09:12:04.284661967+01:00"
+    created: "2024-01-08T14:51:10.890585545+01:00"
+    dependencies:
+    - condition: global.mongodb.deploy
+      name: mongodb
+      repository: file://./charts/mongodb
+      version: 10.23.13
+    description: Services necessary to run EZD RP app
+    digest: 2d636d245d4e21df4afb2fb8d56879ce7e5656f19f9175123f76ed77ed59f6ca
+    home: https://linuxpolska.com
+    icon: https://linuxpolska.com/logo/LinuxPolska-icon.png
+    keywords:
+    - config
+    kubeVersion: '>=1.19.0-0'
+    maintainers:
+    - email: biuro@linuxpolska.com
+      name: Linux Polska
+    name: ezd-backend
+    sources:
+    - https://github.com/linuxpolska/ezd-rp.git
+    type: application
+    urls:
+    - ezd-backend/ezd-backend-1.1.1.tgz
+    version: 1.1.1
+  - annotations:
+      catalog.cattle.io/display-name: LP Backend for EZD RP
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/release-name: ezd-backend
+    apiVersion: v2
+    appVersion: 1.2023-16
+    created: "2024-01-08T14:51:10.887444452+01:00"
     dependencies:
     - condition: global.mongodb.deploy
       name: mongodb
@@ -38,7 +67,49 @@ entries:
       catalog.cattle.io/release-name: ezd-crd
     apiVersion: v2
     appVersion: 1.2023-16
-    created: "2024-01-07T09:12:04.291200713+01:00"
+    created: "2024-01-08T14:51:10.904359349+01:00"
+    dependencies:
+    - condition: global.rabbitmq.deploy
+      name: rabbitmq-operator
+      repository: file://./charts/rabbitmq-operator
+      version: 1.0.0
+    - condition: global.postgresql.deploy
+      name: cloudnative-pg
+      repository: file://./charts/cloudnative-pg
+      version: 0.17.2
+    - condition: global.redis.deploy
+      name: redis-operator
+      repository: file://./charts/redis-operator
+      version: 0.15.3
+    description: Set of operators and CRDs for LP Backend
+    digest: 97ca68dec8b6cb8c7cc1b111ed8604cad6c4929113dc6ca0e8c61edf08a31a34
+    home: https://linuxpolska.com
+    icon: https://linuxpolska.com/logo/LinuxPolska-icon.png
+    keywords:
+    - ezd
+    - ezdrp
+    - ezd-rp
+    - backend
+    - databases
+    kubeVersion: '>=1.19.0-0'
+    maintainers:
+    - email: biuro@linuxpolska.com
+      name: Linux Polska
+    name: ezd-crd
+    sources:
+    - https://github.com/linuxpolska/ezd-rp.git
+    type: application
+    urls:
+    - ezd-crd/ezd-crd-1.1.1.tgz
+    version: 1.1.1
+  - annotations:
+      catalog.cattle.io/display-name: CRDs for LP Backend
+      catalog.cattle.io/namespace: default
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/release-name: ezd-crd
+    apiVersion: v2
+    appVersion: 1.2023-16
+    created: "2024-01-08T14:51:10.897290017+01:00"
     dependencies:
     - condition: global.rabbitmq.deploy
       name: rabbitmq-operator
@@ -73,4 +144,4 @@ entries:
     urls:
     - ezd-crd/ezd-crd-1.0.0.tgz
     version: 1.0.0
-generated: "2024-01-07T09:12:04.27920683+01:00"
+generated: "2024-01-08T14:51:10.883124846+01:00"
