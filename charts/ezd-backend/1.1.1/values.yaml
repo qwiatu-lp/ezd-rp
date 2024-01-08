@@ -52,8 +52,7 @@ rabbitmqConfig:
     #    hosts:
     #      - chart-example.local
   customConfig:
-    image: quay.io/linuxpolska/ezd-backend_rabbitmq
-    tag: 3.11.10-management-rabbitmq-3.11-r1
+    image: quay.io/linuxpolska/ezd-backend_rabbitmq:3.11.10-management-rabbitmq-3.11-r1
     replicas: 2
     rabbitmq:
       additionalConfig: |
@@ -109,8 +108,7 @@ postgresqlConfig:
     walStorage:
       size: 2Gi
       resizeInUseVolumes: True
-    imageName: quay.io/linuxpolska/ezd-backend_postgresql
-    tag: 15.3-postgres-15.3-bullseye-r1
+    imageName: quay.io/linuxpolska/ezd-backend_postgresql:15.3-postgres-15.3-bullseye-r1
     postgresql:
       parameters:
         pg_stat_statements.max: "10000"
@@ -186,8 +184,7 @@ redisConfig:
     password: ""
   customConfig:
     kubernetesConfig:
-      image: quay.io/linuxpolska/ezd-backend_redis
-      tag: 7.0.12-alpine-3.15-r1
+      image: quay.io/linuxpolska/ezd-backend_redis:7.0.12-alpine-3.15-r1
       imagePullPolicy: Always
       imagePullSecrets:
         - name: credentials-registry-app

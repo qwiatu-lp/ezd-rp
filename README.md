@@ -16,12 +16,13 @@ Our package contains set of necessary services which allow  to lunch EZD-RP appl
 ## Table of content
 - [Before you begin](PREREQUISITES.md)
 - [Installation](INSTALLATION.md)
+- [GUI Installation](INSTALLATION_GUI.md)
 - [Troubleshooting](TROUBLESHOOTING.md)
 
 
 ## Getting Started
 
-The best way to get started is with the  ["Before you begin"](PREREQUISITES.md) and  ["Installation"](INSTALLATION.md)
+The best way to get started is with the  ["Before you begin"](PREREQUISITES.md), ["Installation"](INSTALLATION.md) and ["GUI Installation"](INSTALLATION_GUI.md)
 section in the documentation.
 
 
@@ -38,8 +39,8 @@ The X.Y.P versioning scheme roughly corresponds to the following rules (with exc
 ## Releases
 | Release   | Chart Version   | First Stable Version | Status         | Release Notes                                                  |  Tested with NASK Ezdrp application     | Active Maintenance |
 |-----------|-----------------|----------------------|----------------|----------------------------------------------------------------|-----------------------------------------|-------------------|
-| **1.0.0***| 1.0.0           | 1.0.0                | Stable         | [🔗] (https://github.com/linuxpolska/ezd-rp/releases/tag/1.0.0)| Chart up to 1.15.84 and Application version up to 1.2023-15 |        ✅         |
-
+| **1.0.0***| 1.0.0           | 1.0.0                | Stable         | [🔗] (https://github.com/linuxpolska/ezd-rp/releases/tag/1.0.0)| Chart up to 1.15.84 and Application version up to 1.2023-15 |                   |
+| **1.1.1***| 1.1.1           | 1.0.0                | Stable         | [🔗] (https://github.com/linuxpolska/ezd-rp/releases/tag/1.1.1)| Chart up to 1.15.84 and Application version up to 1.2023-15 |        ✅         |
 ## Contact
 
 Please use the following to reach members of the community:

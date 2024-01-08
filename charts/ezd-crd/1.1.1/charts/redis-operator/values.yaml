@@ -1,9 +1,9 @@
 ---
 redisOperator:
   name: redis-operator
-  imageName: quay.io/opstree/redis-operator
+  imageName: quay.io/linuxpolska/ezd-crd_redis-operator
   # Overrides the image tag whose default is the chart appVersion.
-  imageTag: ""
+  imageTag: "0.15.0-golang-1.17-r1"
   imagePullPolicy: Always
 
   # Additional pod annotations
