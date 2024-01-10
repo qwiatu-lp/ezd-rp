@@ -66,7 +66,7 @@ For more detailed information regarding installation of ezd-crd please refer to 
 
 ## Compability with NASK ezdrp version
 
-Chart ezd-crd was tested with chart version up to 1.16.15 (application version up to 1.2023-16).
+Chart ezd-crd was tested with chart version up to 1.15.84 (application version up to 1.2023-16).
 
 ## Configuration and parameters
 
@@ -78,7 +78,7 @@ helm show values lp-ezd/ezd-crd
 ```
 
 ## Components version
-- redis_operator: v0.15.0
-- cluster_operator: 2.2.0
-- cloudnative-pg: 1.19.1
+- redis_operator: 0.15.0-golang-1.17-r1
+- cluster_operator: 2.2.0-golang-1.19-r1
+- cloudnative-pg: 1.19.1-debian-11-r1
 

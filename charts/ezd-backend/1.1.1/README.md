@@ -58,7 +58,7 @@ For more detailed information regarding installation of ezd-backend please refer
 
 ## Compability with NASK ezdrp version
 
-Chart ezd-crd was tested with chart version up to 1.16.15(application version up to 1.2023-16).
+Chart ezd-crd was tested with chart version up to 1.15.84 (application version up to 1.2023-16).
 
 ## Configuration and parameters
 
@@ -70,7 +70,7 @@ helm show values lp-ezd/ezd-backend
 ```
 
 ## Components version
-- mongodb: 4.4.8
-- redis: v7.0.5
-- rabbitmq: 3.11.10-management
-- postgresql: 15.3 
+- mongodb: 5.0.23-debian-11-r1
+- redis: 7.0.12-alpine-3.15-r1
+- rabbitmq: 3.11.10-management-rabbitmq-3.11-r1
+- postgresql: 15.3-postgres-15.3-bullseye-r1

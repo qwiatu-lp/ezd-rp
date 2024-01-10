@@ -323,19 +323,19 @@ questions:
     label: Postgresql Image Name
     description: "Postgresql image name."
     type: string
-    default: "quay.io/linuxpolska/ezd-backend_postgresql:15.3"
+    default: "quay.io/linuxpolska/ezd-backend_postgresql:15.3-postgres-15.3-bullseye-r1"
     show_if: "global.postgresql.deploy=true"
   - variable: rabbitmqConfig.customConfig.image
     label: RabbitMQ Image Name
     description: "RabbitMQ image name."
     type: string
-    default: "quay.io/linuxpolska/ezd-backend_rabbitmq:3.11.10-management"
+    default: "quay.io/linuxpolska/ezd-backend_rabbitmq:3.11.10-management-rabbitmq-3.11-r1"
     show_if: "global.rabbitmq.deploy=true"
   - variable: redisConfig.customConfig.kubernetesConfig.image
     label: Redis Image Name
     description: "Redis Image Name."
     type: string
-    default: "quay.io/linuxpolska/ezd-backend_redis:v7.0.5"
+    default: "quay.io/linuxpolska/ezd-backend_redis:7.0.12-alpine-3.15-r1"
     show_if: "global.redis.deploy=true"
   - variable: redisConfig.customConfig.kubernetesConfig.redisExporter.image
     label: Redis Exporter Image Name
