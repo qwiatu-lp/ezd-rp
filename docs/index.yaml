@@ -7,14 +7,14 @@ entries:
       catalog.cattle.io/release-name: ezd-backend
     apiVersion: v2
     appVersion: 1.2023-16
-    created: "2024-01-08T14:51:10.890585545+01:00"
+    created: "2024-01-10T08:10:28.303041831+01:00"
     dependencies:
     - condition: global.mongodb.deploy
       name: mongodb
       repository: file://./charts/mongodb
       version: 10.23.13
     description: Services necessary to run EZD RP app
-    digest: 2d636d245d4e21df4afb2fb8d56879ce7e5656f19f9175123f76ed77ed59f6ca
+    digest: 3de16264a5e1f17e8d8aacce40f7046778a6891b49810fa8d72eaae8dc11503d
     home: https://linuxpolska.com
     icon: https://linuxpolska.com/logo/LinuxPolska-icon.png
     keywords:
@@ -30,35 +30,6 @@ entries:
     urls:
     - ezd-backend/ezd-backend-1.1.1.tgz
     version: 1.1.1
-  - annotations:
-      catalog.cattle.io/display-name: LP Backend for EZD RP
-      catalog.cattle.io/os: linux
-      catalog.cattle.io/release-name: ezd-backend
-    apiVersion: v2
-    appVersion: 1.2023-16
-    created: "2024-01-08T14:51:10.887444452+01:00"
-    dependencies:
-    - condition: global.mongodb.deploy
-      name: mongodb
-      repository: file://./charts/mongodb
-      version: 10.23.13
-    description: Services necessary to run EZD RP app
-    digest: 952328eafe45ba5b24973a270e25c56f16168d686f3ae09e24558f0a1f323ec2
-    home: https://linuxpolska.com
-    icon: https://linuxpolska.com/logo/LinuxPolska-icon.png
-    keywords:
-    - config
-    kubeVersion: '>=1.19.0-0'
-    maintainers:
-    - email: biuro@linuxpolska.com
-      name: Linux Polska
-    name: ezd-backend
-    sources:
-    - https://github.com/linuxpolska/ezd-rp.git
-    type: application
-    urls:
-    - ezd-backend/ezd-backend-1.0.0.tgz
-    version: 1.0.0
   ezd-crd:
   - annotations:
       catalog.cattle.io/display-name: CRDs for LP Backend
@@ -67,7 +38,7 @@ entries:
       catalog.cattle.io/release-name: ezd-crd
     apiVersion: v2
     appVersion: 1.2023-16
-    created: "2024-01-08T14:51:10.904359349+01:00"
+    created: "2024-01-10T08:10:28.30890436+01:00"
     dependencies:
     - condition: global.rabbitmq.deploy
       name: rabbitmq-operator
@@ -82,7 +53,7 @@ entries:
       repository: file://./charts/redis-operator
       version: 0.15.3
     description: Set of operators and CRDs for LP Backend
-    digest: 97ca68dec8b6cb8c7cc1b111ed8604cad6c4929113dc6ca0e8c61edf08a31a34
+    digest: d53e1b79a128e3de697ecf88565ed15c33d4895edfc37e4c4b384f683e4da10a
     home: https://linuxpolska.com
     icon: https://linuxpolska.com/logo/LinuxPolska-icon.png
     keywords:
@@ -102,46 +73,4 @@ entries:
     urls:
     - ezd-crd/ezd-crd-1.1.1.tgz
     version: 1.1.1
-  - annotations:
-      catalog.cattle.io/display-name: CRDs for LP Backend
-      catalog.cattle.io/namespace: default
-      catalog.cattle.io/os: linux
-      catalog.cattle.io/release-name: ezd-crd
-    apiVersion: v2
-    appVersion: 1.2023-16
-    created: "2024-01-08T14:51:10.897290017+01:00"
-    dependencies:
-    - condition: global.rabbitmq.deploy
-      name: rabbitmq-operator
-      repository: file://./charts/rabbitmq-operator
-      version: 1.0.0
-    - condition: global.postgresql.deploy
-      name: cloudnative-pg
-      repository: file://./charts/cloudnative-pg
-      version: 0.17.2
-    - condition: global.redis.deploy
-      name: redis-operator
-      repository: file://./charts/redis-operator
-      version: 0.15.3
-    description: Set of operators and CRDs for LP Backend
-    digest: 1a476fc3f674c795a4bc83cab3b4ae2d877cd94ec702742321437deb4001447b
-    home: https://linuxpolska.com
-    icon: https://linuxpolska.com/logo/LinuxPolska-icon.png
-    keywords:
-    - ezd
-    - ezdrp
-    - ezd-rp
-    - backend
-    - databases
-    kubeVersion: '>=1.19.0-0'
-    maintainers:
-    - email: biuro@linuxpolska.com
-      name: Linux Polska
-    name: ezd-crd
-    sources:
-    - https://github.com/linuxpolska/ezd-rp.git
-    type: application
-    urls:
-    - ezd-crd/ezd-crd-1.0.0.tgz
-    version: 1.0.0
-generated: "2024-01-08T14:51:10.883124846+01:00"
+generated: "2024-01-10T08:10:28.298467872+01:00"
