@@ -62,11 +62,11 @@ kubectl get crd -o name | grep -E "(postgresql.cnpg.io|rabbitmqclusters.rabbitmq
 
 > **Note**: Deleting the CRDs will delete all data as well. Please be cautious before doing it.
 
-For more detailed information regarding installation of ezd-crd please refer to [QUICKSTART](https://github.com/linuxpolska/ezd-rp/blob/main/QUICKSTART.md)
+For more detailed information regarding installation of ezd-crd please refer to [INSTALLATION](https://github.com/linuxpolska/ezd-rp/blob/main/INSTALLATION.md)
 
 ## Compability with NASK ezdrp version
 
-Chart ezd-crd was tested with chart version up to 1.15.84 (application version up to 1.2023-16).
+Chart ezd-crd was tested with chart version up to 1.15.84 (application version up to 1.2023-15).
 
 ## Configuration and parameters
 

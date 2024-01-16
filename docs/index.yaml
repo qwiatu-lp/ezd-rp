@@ -7,14 +7,14 @@ entries:
       catalog.cattle.io/release-name: ezd-backend
     apiVersion: v2
     appVersion: 1.2023-16
-    created: "2024-01-10T08:05:03.848867565+01:00"
+    created: "2024-01-16T09:42:52.469910782+01:00"
     dependencies:
     - condition: global.mongodb.deploy
       name: mongodb
       repository: file://./charts/mongodb
       version: 10.23.13
     description: Services necessary to run EZD RP app
-    digest: 8eadddb81333205135ad642d41d5c3a8391395e37bd7e18f30061d43bff08f31
+    digest: 1f22170926e669abb745f38fc6ab4e7c47ef83d04a0e2c118cb577570cfd77ee
     home: https://linuxpolska.com
     icon: https://linuxpolska.com/logo/LinuxPolska-icon.png
     keywords:
@@ -36,14 +36,14 @@ entries:
       catalog.cattle.io/release-name: ezd-backend
     apiVersion: v2
     appVersion: 1.2023-16
-    created: "2024-01-10T08:05:03.845808732+01:00"
+    created: "2024-01-16T09:42:52.466444075+01:00"
     dependencies:
     - condition: global.mongodb.deploy
       name: mongodb
       repository: file://./charts/mongodb
       version: 10.23.13
     description: Services necessary to run EZD RP app
-    digest: 952328eafe45ba5b24973a270e25c56f16168d686f3ae09e24558f0a1f323ec2
+    digest: abd6b9fbad4993d76d68157b53e7e600aace4a0b3fd378e915d72f84fc44b158
     home: https://linuxpolska.com
     icon: https://linuxpolska.com/logo/LinuxPolska-icon.png
     keywords:
@@ -67,7 +67,7 @@ entries:
       catalog.cattle.io/release-name: ezd-crd
     apiVersion: v2
     appVersion: 1.2023-16
-    created: "2024-01-10T08:05:03.863931759+01:00"
+    created: "2024-01-16T09:42:52.482674941+01:00"
     dependencies:
     - condition: global.rabbitmq.deploy
       name: rabbitmq-operator
@@ -82,7 +82,7 @@ entries:
       repository: file://./charts/redis-operator
       version: 0.15.3
     description: Set of operators and CRDs for LP Backend
-    digest: ea0f6662ca7687986bc06ac9f35331e689f166c8dfa810093c51d90c83348cd4
+    digest: 29be3a9078e46a158b0b2a788fe1ea28687fdc819a97f4108f684a7c7ee52d99
     home: https://linuxpolska.com
     icon: https://linuxpolska.com/logo/LinuxPolska-icon.png
     keywords:
@@ -109,7 +109,7 @@ entries:
       catalog.cattle.io/release-name: ezd-crd
     apiVersion: v2
     appVersion: 1.2023-16
-    created: "2024-01-10T08:05:03.855377455+01:00"
+    created: "2024-01-16T09:42:52.476024681+01:00"
     dependencies:
     - condition: global.rabbitmq.deploy
       name: rabbitmq-operator
@@ -124,7 +124,7 @@ entries:
       repository: file://./charts/redis-operator
       version: 0.15.3
     description: Set of operators and CRDs for LP Backend
-    digest: 1a476fc3f674c795a4bc83cab3b4ae2d877cd94ec702742321437deb4001447b
+    digest: b812b2bd6c94f884849b9001e6c83c10736fc31ddd42136ce6049a2f65b157d8
     home: https://linuxpolska.com
     icon: https://linuxpolska.com/logo/LinuxPolska-icon.png
     keywords:
@@ -144,4 +144,4 @@ entries:
     urls:
     - ezd-crd/ezd-crd-1.0.0.tgz
     version: 1.0.0
-generated: "2024-01-10T08:05:03.840815672+01:00"
+generated: "2024-01-16T09:42:52.458977867+01:00"
