@@ -40,8 +40,9 @@ The X.Y.P versioning scheme roughly corresponds to the following rules (with exc
 | Release   | Chart Version   | First Stable Version | Status         | Release Notes                                                  |  Tested with NASK Ezdrp application     | Active Maintenance |
 |-----------|-----------------|----------------------|----------------|----------------------------------------------------------------|-----------------------------------------|-------------------|
 | **1.0.0***| 1.0.0           | 1.0.0                | Stable         | [🔗] (https://github.com/linuxpolska/ezd-rp/releases/tag/1.0.0)| Chart up to 1.15.84 and Application version up to 1.2023-15 |                   |
-| **1.1.1***| 1.1.1           | 1.0.0                | Stable         | [🔗] (https://github.com/linuxpolska/ezd-rp/releases/tag/1.1.1)| Chart up to 1.15.84 and Application version up to 1.2023-15 |        ✅         |
-| **1.2.1***| 1.2.1           | 1.0.0                | Stable         | [🔗] (https://github.com/linuxpolska/ezd-rp/releases/tag/1.2.1)| Chart up to 1.15.84 and Application version up to 1.2023-15 |        ✅         |
+| **1.1.1***| 1.1.1           | 1.0.0                | Stable         | [🔗] (https://github.com/linuxpolska/ezd-rp/releases/tag/1.1.1)| Chart up to 1.15.84 and Application version up to 1.2023-15 |                   |
+| **1.2.1***| 1.2.1           | 1.0.0                | Stable         | [🔗] (https://github.com/linuxpolska/ezd-rp/releases/tag/1.2.1)| Chart up to 1.15.84 and Application version up to 1.2023-15 |                   |
+| **1.3.1***| 1.3.1           | 1.0.0                | Stable         | [🔗] (https://github.com/linuxpolska/ezd-rp/releases/tag/1.3.1)| Chart up to 19.4.15 and Application version up to 1.2024-19.4 |        ✅         |
 ## Contact
 
 Please use the following to reach members of the community:

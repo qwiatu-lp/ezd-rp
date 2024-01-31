@@ -11,6 +11,14 @@ export K8S_NAMESPACE=ezd-rp  #desired namespace where ezd-rp will be installed
 export K8S_SC=   #set environmental variable for storage class - to get available run: "kubectl get storageclass"
 
 export POSTGRES_HOST=lp-backend-postgresql-rw
+export RABBITMQ_HOST=lp-backend-rabbitmq
+export MONGO_HOST=lp-backend-mongodb
+export REDIS_HOST=lp-backend-redis
+export REDIS_APPEND_HOST=lp-backend-redis-append
+export MONGO_PORT=27017
+export RABBITMQ_PORT=5672
+export REDIS_PORT=6379
+export REDIS_APPEND_PORT=6379
 export APP_DOMAIN= # set the name of the domain where ezdrp will exist
 export APP_USER_PASSWD=$(openssl rand -hex 10)  # random it by default or set own password
 export PSQL_PASSWD=$(openssl rand -hex 10)  # random it by default or set own password
@@ -18,6 +26,7 @@ export PSQL_APP_PASSWD=$(openssl rand -hex 10)  # random it by default or set ow
 export PSQL_USER=postgres 
 export RABBITMQ_PASSWD=$(openssl rand -hex 10)  # random it by default or set own password
 export RABBITMQ_USER=ezdrpadmin
+export MONGO_USER=root
 export MONGO_PASSWD=$(openssl rand -hex 10)  # random it by default or set own password
 export REDIS_PASSWD=$(openssl rand -hex 10)  # random it by default or set own password
 ```
@@ -121,23 +130,29 @@ ezdrpApi:
 filerepository:
   persistence:
     storageClass: ${K8S_SC}
+rabbitExt:
+  user: ${RABBITMQ_USER}
+  password: ${RABBITMQ_PASSWD}
+  host: ${RABBITMQ_HOST}
+  port: ${RABBITMQ_PORT}
 mongoExt:
+  user: ${MONGO_USER}
   password: ${MONGO_PASSWD}
+  host: ${MONGO_HOST}
+  port: ${MONGO_PORT}
 redisAppendExt:
   isCluster: false
+  password: ${REDIS_PASSWD}
+  host: ${REDIS_APPEND_HOST}
+  port: ${REDIS_APPEND_PORT}
 redisExt:
   isCluster: false
+  password: ${REDIS_PASSWD}
+  host: ${REDIS_APPEND_HOST}
+  port: ${REDIS_APPEND_PORT}
 ssoIdentityServer:
   persistence:
     storageClass: ${K8S_SC}
-useBuiltInMongoDB:
-  enabled: true
-useBuiltInRabbit:
-  enabled: true
-useBuiltInRedis:
-  enabled: true
-useBuiltInRedisAppend:
-  enabled: true
 wpeRest:
   persistence:
     storageClass: ${K8S_SC}
@@ -153,8 +168,49 @@ kubectl -n ${K8S_NAMESPACE} create secret tls ezdrp-cert --cert=certs/domain.cer
 3. Install frontend
 
 ```bash
-helm upgrade --install ezd-frontend -n ${K8S_NAMESPACE} -f /tmp/ezdrp-app.values nask-ezd/nask-ezdrp-ha --version 1.15.84
-#Please remember that in version 1.17.11 and above some of pvc requires "ReadWriteMany" acccess which will not work with storage class vsphere-csi-rwo, please add --version <ver> to pick different than latest.
+#To install newest version of EZDRP download chart and extract it:
+helm pull nask-ezd/nask-ezdrp-ha --version 19.4.15
+tar xf nask-ezdrp-ha-19.4.15.tgz
+#Edit values:
+vim nask-ezdrp-ha/values.yaml
+#Replace values in section:
+#from:
+storage:
+  enabled: true
+  storageClass: &storageclass longhorn
+  force_chown: false
+#to:
+storage:
+  enabled: true
+  storageClass: &storageclass <storageclass which is used>
+  force_chown: true
+#Change settings for cloudadmin:
+#from:
+cloudadmin:
+  active: true
+  centrum_statystyk_reader_url: "https://reader.stats.ezdrp.gov.pl"
+  centrum_statystyk_writer_url: "https://writer.stats.ezdrp.gov.pl"
+  image:
+    name: cloudadmin
+    version: "19.4.15"
+  moduleName: cloudadmin
+  port: &cloudadminport 2000
+  redinessDelay: 20
+  livenessDelay: 180
+#to:
+cloudadmin:
+  active: true
+  centrum_statystyk_reader_url: "https://reader.stats.ezdrp.gov.pl"
+  centrum_statystyk_writer_url: "https://writer.stats.ezdrp.gov.pl"
+  image:
+    name: cloudadmin
+    version: "19.4.15"
+  moduleName: cloudadmin
+  port: &cloudadminport 2000
+  redinessDelay: 120
+  livenessDelay: 280
+#install by:
+helm upgrade --install ezd-frontend -n ${K8S_NAMESPACE} -f /tmp/ezdrp-app.values nask-ezdrp-ha/
 ```
 
 4. Set up password for ezd-fronted application (GUI)
