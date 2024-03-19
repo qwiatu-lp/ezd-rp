@@ -1,0 +1,18 @@
+global:
+  postgresql:
+    deploy: true
+  rabbitmq:
+    deploy: true
+  redis:
+    deploy: true
+postgresqlConfig:
+  auth:
+    admPassword: postgrespostgres
+    appPassword: postgresapp
+rabbitmqConfig:
+  auth:
+    password: postgrespostgres
+    username: ezdrpadmin
+redisConfig:
+  auth:
+    password: postgrespostgres
