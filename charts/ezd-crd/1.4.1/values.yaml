@@ -20,8 +20,8 @@ global:
 
 rabbitmq-operator:
   image:
-    repository: quay.io/darekbola/ezd-crd_cluster-operator
-    tag: 2.7.0-debain-12-r1
+    repository: quay.io/linuxpolska/ezd-crd_cluster-operator
+    tag: 2.7.0-debian-12-r1
     pullPolicy: Always
   imagePullSecrets:
   - name: credentials-registry-operator
@@ -38,7 +38,7 @@ rabbitmq-operator:
 
 cloudnative-pg:
   image:
-    repository: quay.io/darekbola/ezd-crd_cloudnative-pg
+    repository: quay.io/linuxpolska/ezd-crd_cloudnative-pg
     tag: v1.22.2-debian-11-r1
     pullPolicy: Always
   imagePullSecrets:
