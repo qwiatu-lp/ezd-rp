@@ -137,8 +137,8 @@ redisAppendExt:
 redisExt:
   isCluster: false
   password: ${REDIS_PASSWD}
-  host: ${REDIS_APPEND_HOST}
-  port: ${REDIS_APPEND_PORT}
+  host: ${REDIS_HOST}
+  port: ${REDIS_PORT}
 ssoIdentityServer:
   persistence:
     storageClass: ${K8S_SC}
