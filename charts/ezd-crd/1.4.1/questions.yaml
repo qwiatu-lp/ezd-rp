@@ -59,7 +59,7 @@ questions:
   group: "Private Registry Settings"
   subquestions:
   - variable: cloudnative-pg.image.repository
-    default: "quay.io/darekbola/ezd-crd_cloudnative-pg:v1.22.2-debian-11-r1"
+    default: "quay.io/linuxpolska/ezd-crd_cloudnative-pg:v1.22.2-debian-11-r1"
     description: "Postgresql image name"
     type: string
     label: Postgresql Image Name
@@ -71,7 +71,7 @@ questions:
     label: Postgresql Image Tag
     show_if: "global.postgresql.deploy=true"
   - variable: rabbitmq-operator.image.repository
-    default: "quay.io/darekbola/ezd-crd_cluster-operator:2.7.0-golang-1.21-r1"
+    default: "quay.io/linuxpolska/ezd-crd_cluster-operator:2.7.0-golang-1.21-r1"
     description: "RabbitMQ image name"
     type: string
     label: RabbitMQ Image Name
@@ -83,7 +83,7 @@ questions:
     label: RabbitMQ Image Tag
     show_if: "global.rabbitmq.deploy=true"
   - variable: redis-operator.redisOperator.imageName
-    default: "quay.io/darekbola/ezd-crd_redis-operator:0.15.1-golang-1.17-r1"
+    default: "quay.io/linuxpolska/ezd-crd_redis-operator:0.15.0-golang-1.17-r1"
     description: "Redis image name"
     type: string
     label: Redis Image Name
