@@ -1,4 +1,5 @@
 annotations:
+  catalog.cattle.io/auto-install: ezd-crd=match
   catalog.cattle.io/display-name: LP Backend for EZD RP
   catalog.cattle.io/os: linux
   catalog.cattle.io/release-name: ezd-backend

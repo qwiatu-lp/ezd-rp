@@ -3,6 +3,7 @@ annotations:
   catalog.cattle.io/namespace: default
   catalog.cattle.io/os: linux
   catalog.cattle.io/release-name: ezd-crd
+  catalog.cattle.io/hidden: "true"
 apiVersion: v2
 appVersion: 1.2024-19.7
 dependencies:
