@@ -275,5 +275,5 @@ questions:
     label: Redis Exporter Image Name
     description: "Redis Exporter Image Name."
     type: string
-    default: "quay.io/linuxpolska/ezd-backend_redis-exporter:v1.44.0"
+    default: "quay.io/linuxpolska/ezd-backend_redis-exporter:1.44.0"
     show_if: "global.redis.deploy=true"

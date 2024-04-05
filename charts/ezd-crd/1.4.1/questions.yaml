@@ -59,7 +59,7 @@ questions:
   group: "Private Registry Settings"
   subquestions:
   - variable: cloudnative-pg.image.repository
-    default: "quay.io/linuxpolska/ezd-crd_cloudnative-pg:v1.22.2-debian-11-r1"
+    default: "quay.io/linuxpolska/ezd-crd_cloudnative-pg:1.22.2-debian-11-r1"
     description: "Postgresql image name"
     type: string
     label: Postgresql Image Name

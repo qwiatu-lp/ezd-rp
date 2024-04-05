@@ -203,7 +203,7 @@ redisConfig:
               storage: 1Gi
     redisExporter:
       enabled: false
-      image: quay.io/linuxpolska/ezd-backend_redis-exporter:v1.44.0
+      image: quay.io/linuxpolska/ezd-backend_redis-exporter:1.44.0
     podSecurityContext:
       runAsUser: 1000
       fsGroup: 1000

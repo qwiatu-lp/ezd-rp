@@ -39,7 +39,7 @@ rabbitmq-operator:
 cloudnative-pg:
   image:
     repository: quay.io/linuxpolska/ezd-crd_cloudnative-pg
-    tag: v1.22.2-debian-11-r1
+    tag: 1.22.2-debian-11-r1
     pullPolicy: Always
   imagePullSecrets:
   - name: credentials-registry-operator
