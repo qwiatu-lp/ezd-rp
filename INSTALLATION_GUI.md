@@ -78,50 +78,10 @@ In this case please add following repositories:
 
 # Installation applications
 ----------------------
-## EZDRP BACKEND-CRD
-
-1. Choose from lef-hand side menu Apps/Charts like on below screen:
-
-![menu_apps](docs/images/menu_apps.png)
-
-You will be provided with Charts(please use filters to pick linuxpolska EZD RP, and EZD to choose NASK application)
-
-2. Choose CRDs for LP Backend:
-
-![apps_chart](docs/images/chart_crd.png)
-
-3. On next screen you will get instructions regarding requirments and instruction how to manually install and uninstall chart(Chart Info). Components version and requirments:
-
-![crd](docs/images/crd_page.png)
-
-4. Moving forward by pressing next you will get following options: 
-
-![crd_1](docs/images/crd_installation_1.png)
-
-To customize installation please tick box at the bottom ("Customize Helm optrion before install") and press next. 
-This step is optional.
-
-5. Next  you can choose which components should be installed:
-
-![crd_2](docs/images/crd_installation_2.png)
-
-Than you will be provided with next custom option which are additional deployment options:
-
-![crd_3](docs/images/crd_installation_3.png)
-
-6. After choosing prefered components and deployment options press install, it can be find on right hand side of the page:
-
-![crd_4](docs/images/crd_installation_4.png)
-
-7. In next section you will see progress of the installation in CLi, when it will complete sucessfully you will be left with this screen:
-
-![crd_5](docs/images/crd_installation_5.png)
-
-
-Please rember that by default EZD-CRD is deployed on default namespace. EZD-CRD can be deployed only once per cluster.
-
-
 ## EZDRP BACKEND-DB
+
+Please mind that from version 1.4.1 EZDRP BACKEND-CRD will be installed automatically in the same namespace as EZDRP BACKEND-DB.
+
 1. Choose from lef-hand side menu Apps/Charts like on below screen:
 
 ![menu_apps](docs/images/menu_apps.png)
