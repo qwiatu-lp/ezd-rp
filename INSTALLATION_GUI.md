@@ -70,7 +70,7 @@
 
 In this case please add following repositories:
 
-* ezd-lp: https://github.com/linuxpolska/ezd-rp.git
+* ezd-lp: https://linuxpolska.github.io/ezd-rp
 * ezd-nask: https://hub.eadministracja.nask.pl/chartrepo/ezdrp 
 
 4. When finished press create. 
