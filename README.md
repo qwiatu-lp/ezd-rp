@@ -55,6 +55,7 @@ Example versioning `0.15.0-el-9-r1`:
 | **1.2.1***| 1.2.1           | 1.0.0                | Stable         | [🔗] (https://github.com/linuxpolska/ezd-rp/releases/tag/1.2.1)| Chart up to 1.15.84 and Application version up to 1.2023-15 |                   |
 | **1.3.1***| 1.3.1           | 1.0.0                | Stable         | [🔗] (https://github.com/linuxpolska/ezd-rp/releases/tag/1.3.1)| Chart up to 19.4.15 and Application version up to 1.2024-19.4 |                  |
 | **1.4.1***| 1.4.1           | 1.0.0                | Stable         | [🔗] (https://github.com/linuxpolska/ezd-rp/releases/tag/1.4.1)| Chart up to 19.7.15 and Application version up to 1.2024-19.7 |               ✅         |
+| **1.5.1***| 1.5.1           | 1.0.0                | Stable         | [🔗] (https://github.com/linuxpolska/ezd-rp/releases/tag/1.5.1)| Chart up to 19.7.45 and Application version up to 1.2024-19.7.45 |             ✅         |
 ## Contact
 
 Please use the following to reach members of the community:
